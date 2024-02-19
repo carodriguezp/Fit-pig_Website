@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <>
+    <div className='container'>
       <h1>Fit Pig</h1>
       <h2>BMI Calculator</h2>
 
@@ -22,7 +22,7 @@ function App() {
 
       <Button />
       <Footer />
-    </>
+    </div>
   );
 }
 
