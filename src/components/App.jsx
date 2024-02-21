@@ -1,13 +1,33 @@
 import '../style/App.scss'
 
-import Form from './Form';
+import Form from './Form/Form';
 import Pig from './Pig';
-import Button from './Button';
+
 import Footer from './Footer';
+import { useState } from 'react';
 
 //import PropTypes from "prop-types";
 
+
+
+
 function App() {
+
+  //VARIABLES DE ESTADO
+
+  const [inputHeight, setInputHeight] = useState("");
+
+  //FUNCIONES
+
+
+
+  // const handleCalculate = (){
+
+  // };
+
+  // const handleReset = (){
+
+  // };
 
 
   return (
@@ -16,11 +36,11 @@ function App() {
       <h2>BMI Calculator</h2>
 
 
-      <Form />
+      <Form setInputHeight={setInputHeight} inputHeight={inputHeight} />
       <Pig />
 
 
-      <Button />
+
       <Footer />
     </div>
   );
