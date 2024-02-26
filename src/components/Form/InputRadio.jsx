@@ -1,19 +1,26 @@
+import PropTypes from "prop-types";
 
+function InputRadio({ genderValue, radioText, handleGender }) {
 
-function InputRadio() {
+    const handleRadio = (ev) => {
+        handleGender(ev.target.value)
+
+    }
+
     return (
-        <section>
-            <label htmlFor="">Select your gender</label>
+        <>
+            <label htmlFor="">{radioText}</label>
+            <input type="radio" name="gender" value={genderValue} onChange={handleRadio} />
 
-            <label htmlFor="">Female</label>
-            <input type="radio" name="gender" value="female" />
-
-            <label htmlFor="">Male</label>
-            <input type="radio" name="gender" value="male" />
-
-        </section>
+        </>
 
     )
 }
 
 export default InputRadio
+
+InputRadio.propTypes = {
+    genderValue: PropTypes.string,
+    radioText: PropTypes.string,
+    handleGender: PropTypes.string
+}

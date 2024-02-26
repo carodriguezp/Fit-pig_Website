@@ -16,9 +16,13 @@ function App() {
   //VARIABLES DE ESTADO
 
   const [inputHeight, setInputHeight] = useState("");
+  const [inputWeight, setInputWeight] = useState("");
+  const [inputGender, setInputGender] = useState("male");
 
   //FUNCIONES
-
+  const handleGender = (value) => {
+    setInputGender(value)
+  }
 
 
   // const handleCalculate = (){
@@ -36,7 +40,8 @@ function App() {
       <h2>BMI Calculator</h2>
 
 
-      <Form setInputHeight={setInputHeight} inputHeight={inputHeight} />
+      <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} />
+
       <Pig />
 
 

@@ -1,39 +1,30 @@
 import InputText from './InputText';
+import InputSelect from './InputSelect';
+import PropTypes from "prop-types";
 
-function Section({ inputHeight, setInputHeight }) {
+function Section({ inputValue, setInputValue, inputName, placeholderText, valueUnit1, valueUnit2 }) {
     return (
         <>
             <section>
-                <InputText labelText="Write your height" name="height" placeholder="160" value={inputHeight} handleInput={setInputHeight} />
+                <InputText labelText={`Write your ${inputName}`} name={inputName} placeholder={placeholderText} value={inputValue} handleInput={setInputValue} />
 
-
-                <label htmlFor="unit">Select unit</label>
-                <select
-                    className="input-select"
-                >
-                    <option value="cm">cm</option>
-                    <option value="feet">feet</option>
-
-
-                </select>
+                <InputSelect valueUnit1={valueUnit1} valueUnit2={valueUnit2} />
             </section>
 
 
-            {/* <section>
-                <InputText />
-
-                <label htmlFor="unit">Select unit</label>
-
-                <select
-                    className="input-select"
-                >
-                    <option value="kg">kg</option>
-                    <option value="lb">lb</option>
-
-                </select>
-            </section> */}
         </>
     )
 }
 
 export default Section
+
+Section.propTypes = {
+
+    inputValue: PropTypes.string,
+    setInputValue: PropTypes.func,
+    inputName: PropTypes.string,
+    placeholderText: PropTypes.string,
+    valueUnit1: PropTypes.string,
+    valueUnit2: PropTypes.string,
+
+}

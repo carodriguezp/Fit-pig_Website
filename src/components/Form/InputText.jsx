@@ -7,11 +7,6 @@ function InputText({ labelText, name, placeholder, value, handleInput }) {
             <label htmlFor={name}>{labelText}</label>
             <input type="text" name={name} placeholder={placeholder} value={value} onChange={(ev) => handleInput(ev.target.value)} />
 
-            {/* <label htmlFor="">Write your height</label>
-            <input type="text" name="height" placeholder="160" value={inputHeight} onChange={(ev) => handleCalculate(ev.target.value)} /> */}
-            {/* 
-            <label htmlFor="">Write your weight</label>
-                <input type="text" name="weight" placeholder="65" value={inputWeight} /> */}
         </>
     )
 }
