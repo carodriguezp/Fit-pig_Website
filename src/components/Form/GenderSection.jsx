@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import InputRadio from "./InputRadio"
 
-function GenderSection({ handleGender }) {
+function GenderSection({ handleGender, inputGender }) {
 
 
 
@@ -10,8 +10,8 @@ function GenderSection({ handleGender }) {
             <label htmlFor="">Select your gender</label>
 
 
-            <InputRadio radioText="Female" genderValue="female" handleGender={handleGender} />
-            <InputRadio radioText="Male" genderValue="male" handleGender={handleGender} />
+            <InputRadio radioText="Female" genderValue="female" handleGender={handleGender} isChecked={inputGender === "female"} />
+            <InputRadio radioText="Male" genderValue="male" handleGender={handleGender} isChecked={inputGender === "male"} />
 
 
         </section>
@@ -23,5 +23,6 @@ export default GenderSection
 
 GenderSection.propTypes = {
 
-    handleGender: PropTypes.func
+    handleGender: PropTypes.func,
+    inputGender: PropTypes.string,
 }

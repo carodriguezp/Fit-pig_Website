@@ -1,26 +1,22 @@
 import PropTypes from "prop-types";
 
-function Button({ handleCalculate, handleReset }) {
+function Button({ buttonType, handleFunction, buttonText }) {
     return (
 
-        <section className="button">
-            <button className="button-calculate" type="submit" onClick={handleCalculate}>
-                Calculate
-            </button>
-
-            <button className="button-reset" onClick={handleReset}>
-                Reset
-            </button>
-        </section>
+        <button className="button" type={buttonType} onClick={handleFunction}>
+            {buttonText}
+        </button>
 
     )
 }
+
 
 export default Button
 
 Button.propTypes = {
 
-    handleCalculate: PropTypes.func,
-    handleReset: PropTypes.func,
+    buttonType: PropTypes.string,
+    handleFunction: PropTypes.func,
+    buttonText: PropTypes.string,
 
 }

@@ -1,9 +1,13 @@
-import bodyImage from '../images/body.png';
-import faceImage from '../images/face.png';
-import leftArmImage from '../images/left_arm.png';
-import rightArmImage from '../images/right_arm.png';
+import bodyImage from '../../images/body.png';
+import faceImage from '../../images/face.png';
+import leftArmImage from '../../images/left_arm.png';
+import rightArmImage from '../../images/right_arm.png';
 
 function Pig() {
+
+    //variable de estado tamaño cerdo
+
+    //condicional
     return (
         <div>
             <img src={bodyImage} alt="" />
