@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 
-
-function PigResult() {
+function PigResult({ bmi, bmiText }) {
 
 
     //variable de estado
@@ -8,10 +8,19 @@ function PigResult() {
     //condicional
 
     return (
-        <p>
+        <section>
+            <h3>Your BMI is {bmi}</h3>
 
-        </p>
+            <p>{bmiText}</p>
+        </section>
     )
 }
 
 export default PigResult
+
+
+PigResult.propTypes = {
+
+    bmi: PropTypes.number,
+    bmiText: PropTypes.string,
+}

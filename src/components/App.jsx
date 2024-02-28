@@ -1,6 +1,8 @@
 import '../style/App.scss'
 
 import Form from './Form/Form';
+import { bmiRanges } from '../BmiRanges';
+import PigResult from './Pig/PigResult';
 import Pig from './Pig/Pig';
 
 import Footer from './Footer';
@@ -20,6 +22,7 @@ function App() {
   const [inputWeight, setInputWeight] = useState("");
   const [inputGender, setInputGender] = useState("male");
   const [bmi, setBmi] = useState(0);
+  const [bmiText, setBmiText] = useState("");
 
 
   //FUNCIONES
@@ -34,14 +37,32 @@ function App() {
 
 
 
-    const bmiResult = inputWeight / (((inputHeight / 100)) ** 2);
+    const bmiResult = (inputWeight / (((inputHeight / 100)) ** 2)).toFixed(1);
 
-    setBmi(bmiResult.toFixed(2))
+    setBmi(bmiResult)
+
+    if (bmiResult < 18.5) {
+      setBmiText(bmiRanges.underweight)
+    } else if (18.5 < bmiResult && bmiResult < 24.9) {
+      setBmiText(bmiRanges.healthyWeight)
+    } else if (25 < bmiResult && bmiResult < 29.9) {
+      setBmiText(bmiRanges.overweight)
+    } else if (30 < bmiResult && bmiResult < 34.9) {
+      setBmiText(bmiRanges.obesity1)
+    } else if (35 < bmiResult && bmiResult < 39.9) {
+      setBmiText(bmiRanges.obesity2)
+    } else if (40 < bmiResult) {
+      setBmiText(bmiRanges.obesity3)
+    }
 
   };
 
   const handleReset = () => {
-
+    setInputHeight("");
+    setInputWeight("");
+    setInputGender("male");
+    setBmi(0);
+    setBmiText("");
   };
 
 
@@ -55,7 +76,7 @@ function App() {
       <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} handleCalculate={calculateBmi} handleReset={handleReset} inputGender={inputGender} />
 
 
-
+      {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
       <Pig />
 
 
