@@ -12,8 +12,6 @@ import { useState } from 'react';
 //import PropTypes from "prop-types";
 
 
-
-
 function App() {
 
   //VARIABLES DE ESTADO
@@ -34,8 +32,6 @@ function App() {
   const calculateBmi = (event) => {
 
     event.preventDefault()
-
-
 
     const bmiResult = (inputWeight / (((inputHeight / 100)) ** 2)).toFixed(1);
 

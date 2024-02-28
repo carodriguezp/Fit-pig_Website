@@ -9,8 +9,8 @@ function InputRadio({ genderValue, radioText, handleGender, isChecked }) {
 
     return (
         <>
-            <label htmlFor="">{radioText}</label>
-            <input type="radio" name="gender" value={genderValue} onChange={handleRadio} checked={isChecked} />
+            <label htmlFor="" className="hover">{radioText}</label>
+            <input className="hover" type="radio" name="gender" value={genderValue} onChange={handleRadio} checked={isChecked} />
 
         </>
 

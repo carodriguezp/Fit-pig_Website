@@ -1,5 +1,9 @@
 @import 'core/reset';
 
 .container {
+    cursor: url('../images/pigPointer.png'), auto;
+}
+
+.hover {
     cursor: url('../images/jamonPointer.png'), auto;
 }

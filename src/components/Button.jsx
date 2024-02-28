@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 function Button({ buttonType, handleFunction, buttonText }) {
     return (
 
-        <button className="button" type={buttonType} onClick={handleFunction}>
+        <button className="button hover" type={buttonType} onClick={handleFunction}>
             {buttonText}
         </button>
 
