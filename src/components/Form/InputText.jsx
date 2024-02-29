@@ -10,7 +10,7 @@ function InputText({ labelText, name, placeholder, value, handleInput }) {
     return (
         <>
 
-            <label htmlFor={name}>{labelText}</label>
+            <label htmlFor={name} className="hover">{labelText}</label>
             <input type="text" className="hover" name={name} placeholder={placeholder} value={value} onChange={(ev) => handleInput(ev.target.value)} />
 
         </>

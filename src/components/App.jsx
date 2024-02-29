@@ -19,7 +19,7 @@ function App() {
   const [inputHeight, setInputHeight] = useState("");
   const [inputWeight, setInputWeight] = useState("");
   const [inputGender, setInputGender] = useState("male");
-  const [bmi, setBmi] = useState(0);
+  const [bmi, setBmi] = useState(100);
   const [bmiText, setBmiText] = useState("");
 
 
@@ -73,7 +73,7 @@ function App() {
 
 
       {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
-      <Pig />
+      <Pig bmi={bmi} />
 
 
 

@@ -14,10 +14,10 @@ function Footer() {
 
             <div className="author__technologies--icon">
                 <a href="https://www.linkedin.com/in/carolinarodrp" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-linkedin">Linkedin</i>
+                    <i className="fa-brands fa-linkedin hover">Linkedin</i>
                 </a>
                 <a href="https://github.com/carodriguezp" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-github">Github</i>
+                    <i className="fa-brands fa-github hover">Github</i>
                 </a>
             </div>
         </footer>
