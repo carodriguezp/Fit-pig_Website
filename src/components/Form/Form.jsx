@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import Section from "./Section";
 import GenderSection from "./genderSection";
-import Button from '../Button';
+import Button from './Button';
 
 function Form({ inputHeight, setInputHeight, inputWeight, setInputWeight, handleGender, handleCalculate, handleReset, inputGender }) {
     return (

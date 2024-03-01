@@ -1,12 +1,13 @@
 import '../style/App.scss'
 
+import Header from './Header';
 import Form from './Form/Form';
 import { bmiRanges } from '../BmiRanges';
 import PigResult from './Pig/PigResult';
 import Pig from './Pig/Pig';
-
 import Footer from './Footer';
 import { useState } from 'react';
+
 
 
 //import PropTypes from "prop-types";
@@ -64,18 +65,17 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Fit Pig</h1>
-      <h2>Even if you feel fat, you can be fit</h2>
-      <h3>BMI Calculator</h3>
+
+      <Header />
+
+      <section>
+        <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} handleCalculate={calculateBmi} handleReset={handleReset} inputGender={inputGender} />
 
 
-      <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} handleCalculate={calculateBmi} handleReset={handleReset} inputGender={inputGender} />
+        {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
+        {/* <Pig bmi={bmi} /> */}
 
-
-      {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
-      <Pig bmi={bmi} />
-
-
+      </section>
 
       <Footer />
     </div>

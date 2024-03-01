@@ -1,7 +1,15 @@
 @import 'core/reset';
+@import 'core/variables';
+
+@import 'header';
+@import 'form';
+@import 'pig';
+@import 'footer';
+
 
 .container {
     cursor: url('../images/pigPointer.png'), auto;
+    width: 100vw;
 }
 
 .hover {

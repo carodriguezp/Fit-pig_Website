@@ -2,6 +2,7 @@ import bodyImage from '../../images/body.png';
 import faceImage from '../../images/face.png';
 import leftArmImage from '../../images/left_arm.png';
 import rightArmImage from '../../images/right_arm.png';
+import PropTypes from "prop-types";
 
 function Pig({ bmi }) {
 
@@ -10,7 +11,7 @@ function Pig({ bmi }) {
     const style = { width: width }
     //condicional
     return (
-        <div>
+        <div className='pig'>
             <img src={bodyImage} alt="" style={style} />
             <img src={faceImage} alt="" />
             <img src={leftArmImage} alt="" />
@@ -21,3 +22,8 @@ function Pig({ bmi }) {
 }
 
 export default Pig
+
+Pig.propTypes = {
+
+    bmi: PropTypes.string,
+}
