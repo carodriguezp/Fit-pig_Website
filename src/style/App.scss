@@ -10,6 +10,23 @@
 .container {
     cursor: url('../images/pigPointer.png'), auto;
     width: 100vw;
+    height: 100vh;
+
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 30px;
+        justify-content: space-between;
+        // height: 63%;
+        background: linear-gradient(180deg, rgba(255, 230, 242, 1) 0%, rgba(255, 204, 230, 1) 36%, rgba(255, 153, 204, 1) 100%);
+
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
 }
 
 .hover {

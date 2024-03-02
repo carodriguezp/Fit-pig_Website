@@ -8,11 +8,11 @@ function InputRadio({ genderValue, radioText, handleGender, isChecked }) {
     }
 
     return (
-        <>
-            <label htmlFor="" className="hover">{radioText}</label>
-            <input className="hover" type="radio" name="gender" value={genderValue} onChange={handleRadio} checked={isChecked} />
+        <div className="form-section-radio-div">
+            <label htmlFor="" className="form-section-radio-label hover">{radioText}</label>
+            <input className="form-section-radio-input hover" type="radio" name="gender" value={genderValue} onChange={handleRadio} checked={isChecked} />
 
-        </>
+        </div>
 
     )
 }

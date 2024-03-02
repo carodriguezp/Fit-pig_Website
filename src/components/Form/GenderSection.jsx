@@ -6,8 +6,8 @@ function GenderSection({ handleGender, inputGender }) {
 
 
     return (
-        <section>
-            <label className="hover" htmlFor="">Select your gender</label>
+        <section className="form-section-radio">
+            <label className="form-section-label hover" htmlFor="">Select your gender:</label>
 
 
             <InputRadio radioText="Female" genderValue="female" handleGender={handleGender} isChecked={inputGender === "female"} />

@@ -10,8 +10,8 @@ function InputText({ labelText, name, placeholder, value, handleInput }) {
     return (
         <>
 
-            <label htmlFor={name} className="hover">{labelText}</label>
-            <input type="text" className="hover" name={name} placeholder={placeholder} value={value} onChange={(ev) => handleInput(ev.target.value)} />
+            <label htmlFor={name} className="form-section-label hover">{labelText}</label>
+            <input type="text" className=" form-section-input hover" name={name} placeholder={placeholder} value={value} onChange={(ev) => handleInput(ev.target.value)} />
 
         </>
     )

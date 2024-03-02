@@ -1,0 +1,104 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 4rem;
+    font-family: $font-family-sister;
+    color: $-color-wine;
+
+    &-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-radio {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+
+            &-label {
+                font-size: 1.8rem;
+                color: $-color-dark-pink;
+
+                @media (min-width: 768px) {
+                    font-size: 3rem;
+                }
+
+                @media (min-width: 1022px) {
+                    font-size: 3.5rem;
+                }
+            }
+
+            &-input {
+
+                accent-color: $-color-true-pink;
+                width: 14px;
+
+
+
+                @media (min-width: 768px) {
+                    width: 19px;
+                }
+
+                @media (min-width: 1022px) {
+                    width: 20px;
+                }
+            }
+
+            &-div {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                gap: 10px;
+            }
+
+        }
+
+        &-label {
+            font-size: 1.8rem;
+            color: $-color-wine;
+
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+
+            @media (min-width: 1022px) {
+                font-size: 3.5rem;
+            }
+        }
+
+        &-input {
+            border-radius: 5px;
+            border: 2px solid $-color-true-pink;
+            padding: 3px;
+            color: $-color-dark-pink;
+            font-family: $font-family-luckiest-guy;
+            font-size: 1.6rem;
+            background: linear-gradient(90deg, rgba(255, 230, 242, 1) 0%, rgba(255, 204, 230, 1) 36%, rgba(255, 153, 204, 1) 100%);
+
+            &:hover {
+                box-shadow: 0px 0px 10px 1px $-color-true-pink;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 2rem;
+            }
+
+            @media (min-width: 1022px) {
+                font-size: 2.7rem;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px 10px 20px;
+
+        &-button {}
+
+    }
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <nav>
                 <ul>
                     <li><Link to="/"><i className="fa-solid fa-house hover">Home</i></Link></li>

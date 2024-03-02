@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 function Section({ inputValue, setInputValue, inputName, placeholderText, valueUnit1, valueUnit2 }) {
     return (
         <>
-            <section>
-                <InputText labelText={`Write your ${inputName}`} name={inputName} placeholder={placeholderText} value={inputValue} handleInput={setInputValue} />
+            <section className='form-section'>
+                <InputText labelText={`Write your ${inputName}:`} name={inputName} placeholder={placeholderText} value={inputValue} handleInput={setInputValue} />
 
                 <InputSelect valueUnit1={valueUnit1} valueUnit2={valueUnit2} />
             </section>
