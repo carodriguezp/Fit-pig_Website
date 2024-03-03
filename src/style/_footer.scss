@@ -1,4 +1,49 @@
 .footer {
-    // height: 15%;
-    background-color: blue;
+    background-color: $-color-dark-pink;
+    color: $-color-pale-pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+
+    &__nav {
+
+        &-list {
+            list-style: none;
+
+            &-element {
+
+                a {
+                    text-decoration: none;
+                    color: $-color-pale-pink;
+                    font-size: 1.6rem;
+                }
+
+            }
+        }
+    }
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        a {
+            text-decoration: none;
+            color: $-color-pale-pink;
+            padding-right: 10px;
+
+            i {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+;
+
+.copy {
+    color: $-color-pale-pink;
+    font-size: 1.2rem;
 }

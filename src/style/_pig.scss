@@ -1,8 +1,44 @@
 .pig {
+    position: relative;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 
-    width: 50vw;
+    &__container {
+        width: 80%;
+    }
 
     &__body {
-        width: 80%;
+        position: absolute;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    &-face {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-img {
+            width: 40%;
+        }
+    }
+
+    &-arm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+
+        &-img {
+            width: 20%;
+        }
     }
 }

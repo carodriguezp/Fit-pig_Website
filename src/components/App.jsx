@@ -20,7 +20,7 @@ function App() {
   const [inputHeight, setInputHeight] = useState("");
   const [inputWeight, setInputWeight] = useState("");
   const [inputGender, setInputGender] = useState("male");
-  const [bmi, setBmi] = useState(100);
+  const [bmi, setBmi] = useState(0);
   const [bmiText, setBmiText] = useState("");
 
 
@@ -36,7 +36,7 @@ function App() {
 
     const bmiResult = (inputWeight / (((inputHeight / 100)) ** 2)).toFixed(1);
 
-    setBmi(bmiResult)
+    setBmi(Number(bmiResult))
 
     if (bmiResult < 18.5) {
       setBmiText(bmiRanges.underweight)
@@ -54,7 +54,8 @@ function App() {
 
   };
 
-  const handleReset = () => {
+  const handleReset = (event) => {
+    event.preventDefault()
     setInputHeight("");
     setInputWeight("");
     setInputGender("male");

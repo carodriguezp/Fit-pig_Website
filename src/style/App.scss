@@ -10,7 +10,6 @@
 
 .container {
     cursor: url('../images/pigPointer.png'), auto;
-    width: 100vw;
     height: 100vh;
 
 
@@ -20,11 +19,16 @@
         align-items: center;
         padding: 10px 30px;
         justify-content: space-between;
-        background: linear-gradient(180deg, rgba(255, 230, 242, 1) 0%, rgba(255, 204, 230, 1) 36%, rgba(255, 153, 204, 1) 100%);
+        background-color: $-color-soft-pink;
+        min-height: 75vh;
 
 
         @media (min-width: 768px) {
             flex-direction: row;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 10px 70px;
         }
 
         &-pig_div {
