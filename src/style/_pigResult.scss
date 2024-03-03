@@ -1,0 +1,39 @@
+.pigResult {
+    padding: 20px 10px;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: $-color-pale-pink;
+    border-radius: 10px;
+
+    h3 {
+        font-family: $font-family-gluten;
+        color: $-color-dark-pink;
+        font-size: 1.8rem;
+
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+
+        @media (min-width: 1022px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    p {
+        font-family: $font-family-sister;
+        color: $-color-burgundy;
+        font-size: 1.6rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media (min-width: 1022px) {
+            font-size: 2.7rem;
+        }
+    }
+}

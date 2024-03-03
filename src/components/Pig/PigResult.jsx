@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 function PigResult({ bmi, bmiText }) {
 
     return (
-        <section>
+        <section className="pigResult">
             <h3>Your BMI is {bmi}</h3>
 
             <p>{bmiText}</p>

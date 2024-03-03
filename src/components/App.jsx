@@ -71,10 +71,10 @@ function App() {
       <section className='container__section'>
         <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} handleCalculate={calculateBmi} handleReset={handleReset} inputGender={inputGender} />
 
-
-        {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
-        <Pig bmi={bmi} />
-
+        <div className='container__section-pig_div'>
+          {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
+          <Pig bmi={bmi} />
+        </div>
       </section>
 
       <Footer />
