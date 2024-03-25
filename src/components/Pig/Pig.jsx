@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 function Pig({ bmi }) {
 
     //variable de estado tamaño cerdo
-    const width = bmi ? ((bmi * 500) / 100) : "30vw"; ///concatenar el resultado de with con un string de %
+    const width = bmi ? ((bmi * 500) / 50) : "30vw"; ///concatenar el resultado de with con un string de %
     const style = { width: width }
     //condicional
     return (

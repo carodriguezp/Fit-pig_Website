@@ -8,6 +8,8 @@
 
     &__container {
         width: 80%;
+        max-width: 300px;
+        min-width: 150px;
     }
 
     &__body {
