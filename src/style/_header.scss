@@ -1,3 +1,5 @@
+@import 'menu';
+
 .header {
     background: linear-gradient(180deg, rgba(255, 230, 242, 1) 0%, rgba(255, 204, 230, 1) 36%, rgba(179, 0, 89, 1) 100%);
 
@@ -16,45 +18,65 @@
 
     &__div {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        gap: 20px;
 
         @media (min-width: 768px) {
-            align-items: center;
-            gap: 30px;
+            padding-right: 10px;
         }
 
         @media (min-width: 1022px) {
-            padding: 20px 10px 15px 35px;
+            padding-right: 20px;
         }
 
-        img {
-            width: 50px;
+        &-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
 
             @media (min-width: 768px) {
-                width: 100px;
+                align-items: center;
+                gap: 30px;
             }
 
             @media (min-width: 1022px) {
-                width: 130px;
-            }
-        }
-
-        h1 {
-            font-family: $font-family-gluten;
-            font-weight: $font-weight-gluten;
-            font-size: 5.2rem;
-            color: $-color-true-pink;
-
-            @media (min-width: 768px) {
-                font-size: 7rem;
+                padding: 20px 10px 15px 35px;
             }
 
-            @media (min-width: 1022px) {
-                font-size: 9rem;
+            img {
+                width: 50px;
+
+                @media (min-width: 768px) {
+                    width: 100px;
+                }
+
+                @media (min-width: 1022px) {
+                    width: 130px;
+                }
+            }
+
+            h1 {
+                font-family: $font-family-gluten;
+                font-weight: $font-weight-gluten;
+                font-size: 5.2rem;
+                color: $-color-true-pink;
+
+                @media (min-width: 768px) {
+                    font-size: 7rem;
+                }
+
+                @media (min-width: 1022px) {
+                    font-size: 9rem;
+                }
             }
         }
     }
+
+
 
 
 
