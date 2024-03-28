@@ -10,3 +10,22 @@
         font-size: 4rem;
     }
 }
+
+.menu {
+
+
+    &-list {
+        list-style: none;
+
+        &-element {
+
+            a {
+                text-decoration: none;
+                color: $-color-pale-pink;
+                font-size: 1.6rem;
+            }
+
+        }
+    }
+
+}
