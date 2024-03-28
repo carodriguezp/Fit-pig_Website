@@ -1,4 +1,6 @@
-import '../style/App.scss'
+import '../style/App.scss';
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 import Header from './Header';
 import Form from './Form/Form';
@@ -6,7 +8,8 @@ import { bmiRanges } from '../BmiRanges';
 import PigResult from './Pig/PigResult';
 import Pig from './Pig/Pig';
 import Footer from './Footer';
-import { useState } from 'react';
+
+import About from './About';
 
 
 
@@ -69,15 +72,26 @@ function App() {
 
       <Header />
 
-      <section className='container__section'>
-        <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} handleCalculate={calculateBmi} handleReset={handleReset} inputGender={inputGender} />
+      <Routes>
+        <Route path='/' element={
 
-        <div className='container__section-pig_div'>
-          {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
-          <Pig bmi={bmi} />
-        </div>
-      </section>
+          <section className='container__section'>
+            <Form setInputHeight={setInputHeight} inputHeight={inputHeight} setInputWeight={setInputWeight} inputWeight={inputWeight} handleGender={handleGender} handleCalculate={calculateBmi} handleReset={handleReset} inputGender={inputGender} />
 
+            <div className='container__section-pig_div'>
+              {bmiText && <PigResult bmi={bmi} bmiText={bmiText} />} {/*binary operator */}
+              <Pig bmi={bmi} />
+            </div>
+          </section>
+
+        }
+        />
+
+        <Route path='/about' element={<About />} />
+
+        {/* <Route path='/improve' element={<Improve />} /> */}
+
+      </Routes>
       <Footer />
     </div>
   );
