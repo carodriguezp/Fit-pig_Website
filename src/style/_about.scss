@@ -1,0 +1,113 @@
+.about {
+
+    height: fit-content;
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    background-color: $-color-pale-pink;
+
+    top: 0px;
+    padding: 30px;
+
+    @media (min-width: 768px) {
+        padding: 50px;
+    }
+
+    @media (min-width: 1022px) {
+        padding: 100px;
+    }
+
+    &__div {
+
+        background: rgba(255, 204, 230, 1);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        &-title {
+
+            font-size: 1.8rem;
+            color: $-color-dark-pink;
+
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+
+            @media (min-width: 1022px) {
+                font-size: 3.5rem;
+            }
+
+            h1 {
+                font-family: $font-family-gluten;
+                font-weight: $font-weight-gluten;
+                font-size: 3.3rem;
+                color: $-color-true-pink;
+                text-align: center;
+                padding-bottom: 10px;
+
+                @media (min-width: 768px) {
+                    font-size: 5rem;
+                }
+
+                @media (min-width: 1022px) {
+                    font-size: 8rem;
+                }
+            }
+
+            i {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                padding-right: 20px;
+                font-size: 2.3rem;
+
+                @media (min-width: 768px) {
+                    font-size: 3.3rem;
+                    top: 45px;
+                    padding-right: 45px;
+                }
+
+                @media (min-width: 1022px) {
+                    font-size: 5rem;
+                    top: 100px;
+                    padding-right: 100px;
+                }
+            }
+        }
+
+
+        &-section {
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 20px;
+
+
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+
+            @media (min-width: 1022px) {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-family: $font-family-sister;
+                font-size: 2.3rem;
+                padding-bottom: 10px;
+                color: $-color-dark-pink;
+            }
+
+            p {
+                color: $-color-burgundy;
+                font-size: 1.8rem;
+                font-family: $font-family-roboto;
+            }
+        }
+    }
+
+
+}
