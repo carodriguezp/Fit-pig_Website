@@ -4,12 +4,12 @@ import { Route, Routes } from 'react-router-dom';
 
 import Header from './Header';
 import Form from './Form/Form';
-import { bmiRanges } from '../BmiRanges';
+import { bmiRanges } from './Pig/bmiRanges';
 import PigResult from './Pig/PigResult';
 import Pig from './Pig/Pig';
 import Footer from './Footer';
 
-import About from './About';
+import About from './About/About';
 
 
 
