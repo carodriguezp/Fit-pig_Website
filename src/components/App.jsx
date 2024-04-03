@@ -7,6 +7,7 @@ import Form from './Form/Form';
 import { bmiRanges } from './Pig/bmiRanges';
 import PigResult from './Pig/PigResult';
 import Pig from './Pig/Pig';
+import Improve from './Improve/Improve';
 import Footer from './Footer';
 
 import About from './About/About';
@@ -89,7 +90,7 @@ function App() {
 
         <Route path='/about' element={<About />} />
 
-        {/* <Route path='/improve' element={<Improve />} /> */}
+        <Route path='/improve' element={<Improve />} />
 
       </Routes>
       <Footer />
