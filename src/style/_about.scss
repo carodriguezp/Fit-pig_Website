@@ -1,11 +1,10 @@
 .about {
 
-    height: fit-content;
-    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: 3;
     background-color: $-color-pale-pink;
-
+    overflow-x: hidden;
     top: 0px;
     padding: 30px;
 
@@ -62,6 +61,11 @@
                 right: 0;
                 padding-right: 20px;
                 font-size: 2.3rem;
+                color: $-color-dark-pink;
+
+                &:hover {
+                    cursor: url('../images/jamonPointer.png'), auto;
+                }
 
                 @media (min-width: 768px) {
                     font-size: 3.3rem;
