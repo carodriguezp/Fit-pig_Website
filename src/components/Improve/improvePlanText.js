@@ -19,13 +19,13 @@ export const coolDownText = [
 
 export const improvePlanText = [
 
-    { frecuency: "1", program: [{ title: "", exercises: [fullBody] }] },
-    { frecuency: "2", program: [{ title: "", exercises: [upperBody, lowerBody] }] },
-    { frecuency: "3", program: [{ title: "", exercises: [upperBody, lowerBody, cardioAndCore] }] },
-    { frecuency: "4", program: [{ title: "", exercises: [upperBody, lowerBody, recoveryExercise, cardioAndCore] }] },
-    { frecuency: "5", program: [{ title: "", exercises: [upperBody, lowerBody, cardioAndCore, upperBody, lowerBody] }] },
-    { frecuency: "6", program: [{ title: "", exercises: [upperBody, lowerBody, recoveryExercise, upperBody, lowerBody, cardioAndCore] }] },
-    { frecuency: "7", program: [{ title: "", exercises: [upperBody, lowerBody, cardioAndCore, upperBody, lowerBody, cardioAndCore, recoveryExercise] }] },
+    { frecuency: "1", program: [{ title: "Full-Body Workout", exercises: [fullBody] }] },
+    { frecuency: "2", program: [{ title: "Day 1: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 2: Lower Body Strength Training", exercises: [lowerBody] }] },
+    { frecuency: "3", program: [{ title: "Day 1: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 2: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 3: Cardio and Core", exercises: [cardioAndCore] }] },
+    { frecuency: "4", program: [{ title: "Day 1: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 2: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 3: Active Rest or Recovery Activity", exercises: [recoveryExercise] }, { title: "Day 4: Cardio and Core", exercises: [cardioAndCore] }] },
+    { frecuency: "5", program: [{ title: "Day 1: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 2: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 3: Cardio and Core", exercises: [cardioAndCore] }, { title: "Day 4: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 5: Lower Body Strength Training", exercises: [lowerBody] }] },
+    { frecuency: "6", program: [{ title: "Day 1: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 2: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 3: Active Rest or Recovery Activity", exercises: [recoveryExercise] }, { title: "Day 4: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 5: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 6: Cardio and Core", exercises: [cardioAndCore] }] },
+    { frecuency: "7", program: [{ title: "Day 1: Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 2: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 3: Cardio and Core", exercises: [cardioAndCore] }, { title: "Day 4 Upper Body Strength Training", exercises: [upperBody] }, { title: "Day 5: Lower Body Strength Training", exercises: [lowerBody] }, { title: "Day 6: Cardio and Core", exercises: [cardioAndCore] }, { title: "Day 7: Active Rest or Recovery Activity", exercises: [recoveryExercise] }] },
 
 ]
 
